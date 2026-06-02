@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import Link from "next/link";
 import logo from "@/assets/ristic-labs-logo.png";
 
 export function Footer() {
@@ -7,8 +7,8 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-14 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2 font-display text-lg font-bold">
-            <Link to="/" className="flex items-center gap-2 font-display text-lg font-bold">
-              <img src={logo} alt="Ristic Labs" width={36} height={36} className="h-9 w-9 object-contain" />
+            <Link href="/" className="flex items-center gap-2 font-display text-lg font-bold">
+              <img src={logo.src} alt="Ristic Labs" width={36} height={36} className="h-9 w-9 object-contain" />
               <span>Ristic <span className="text-primary">Labs</span></span>
             </Link>
           </div>
@@ -22,11 +22,11 @@ export function Footer() {
         <div>
           <h4 className="mb-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground">Navigate</h4>
           <ul className="space-y-2 text-sm">
-            <li><Link to="/" className="hover:text-primary">Home</Link></li>
-            <li><Link to="/about" className="hover:text-primary">About</Link></li>
-            <li><Link to="/services" className="hover:text-primary">Services</Link></li>
-            <li><Link to="/careers" className="hover:text-primary">Careers</Link></li>
-            <li><Link to="/contact" className="hover:text-primary">Contact</Link></li>
+            <li><Link href="/" className="hover:text-primary">Home</Link></li>
+            <li><Link href="/about" className="hover:text-primary">About</Link></li>
+            <li><Link href="/services" className="hover:text-primary">Services</Link></li>
+            <li><Link href="/careers" className="hover:text-primary">Careers</Link></li>
+            <li><Link href="/contact" className="hover:text-primary">Contact</Link></li>
           </ul>
         </div>
         <div>
