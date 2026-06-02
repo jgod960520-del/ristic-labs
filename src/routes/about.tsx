@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { SiteShell } from "@/components/SiteShell";
-const aboutImage = "https://plus.unsplash.com/premium_photo-1682309605420-f31108d855f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjIzfHxibG9ja2NoYWlufGVufDB8fDB8fHww";
+const aboutImage = "https://plus.unsplash.com/premium_photo-1661872817492-fd0c30404d74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTI2fHxibG9ja2NoYWluJTIwZWNobyUyMHN5c3RlbXxlbnwwfHwwfHx8MA%3D%3D";
 
 export default function About() {
   return (
