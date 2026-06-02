@@ -76,7 +76,7 @@ export default function Home() {
           <div className="mb-14 max-w-2xl">
             <span className="font-mono text-xs uppercase tracking-widest text-primary">// What we do</span>
             <h2 className="mt-3 text-4xl font-bold md:text-5xl">
-              Blockchain, AI, immersive tech, supply chain.
+              Blockchain, AI, Immersive Tech, Supply Chain.
             </h2>
             <p className="mt-4 text-muted-foreground">
               Our specialties span blockchain services and products, artificial
