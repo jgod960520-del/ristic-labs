@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Boxes, Code2, Globe2, Layers, Shield, Zap } from "lucide-react";
 import { SiteShell } from "@/components/SiteShell";
 
-const heroImage = "https://images.unsplash.com/photo-1674027444485-cec3da58eef4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fGJsb2NrY2hhaW58ZW58MHx8MHx8fDA%3D";
+const heroImage = "https://plus.unsplash.com/premium_photo-1661816432228-7637c8b2a0a4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjM1fHxibG9ja2NoYWlufGVufDB8fDB8fHww";
 
 export default function Home() {
   return (
