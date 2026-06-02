@@ -2,7 +2,8 @@ import Head from "next/head";
 import Link from "next/link";
 import { ArrowRight, Boxes, Code2, Globe2, Layers, Shield, Zap } from "lucide-react";
 import { SiteShell } from "@/components/SiteShell";
-import hero from "@/assets/hero-blockchain.jpg";
+
+const heroImage = "https://images.unsplash.com/photo-1674027444485-cec3da58eef4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fGJsb2NrY2hhaW58ZW58MHx8MHx8fDA%3D";
 
 export default function Home() {
   return (
@@ -61,8 +62,8 @@ export default function Home() {
             <div className="relative">
               <div className="absolute -inset-8 rounded-3xl bg-primary/10 blur-3xl" aria-hidden />
               <img
-                src={hero.src}
-                alt="Blockchain network visualization"
+                src={heroImage}
+                alt="Purple blockchain symbol image"
                 width={1920}
                 height={1080}
                 className="relative rounded-2xl border border-border/60 shadow-2xl"

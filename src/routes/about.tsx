@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { SiteShell } from "@/components/SiteShell";
-import about from "@/assets/about-visual.jpg";
+const aboutImage = "https://plus.unsplash.com/premium_photo-1682309605420-f31108d855f5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjIzfHxibG9ja2NoYWlufGVufDB8fDB8fHww";
 
 export default function About() {
   return (
@@ -41,7 +41,7 @@ export default function About() {
           </div>
           <div className="relative">
             <div className="absolute -inset-6 rounded-3xl bg-primary/10 blur-3xl" aria-hidden />
-            <img src={about.src} alt="Blockchain lattice" loading="lazy" width={1280} height={1280} className="relative rounded-2xl border border-border" />
+            <img src={aboutImage} alt="Blockchain lattice" loading="lazy" width={1280} height={1280} className="relative rounded-2xl border border-border" />
           </div>
         </section>
 
