@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Boxes, Code2, Globe2, Layers, Shield, Zap } from "lucide-react";
 import { SiteShell } from "@/components/SiteShell";
 
-const heroImage = "https://plus.unsplash.com/premium_photo-1661816432228-7637c8b2a0a4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjM1fHxibG9ja2NoYWlufGVufDB8fDB8fHww";
+import heroImage from "@assets/ai.jpg";
 
 export default function Home() {
   return (
@@ -62,7 +62,7 @@ export default function Home() {
             <div className="relative">
               <div className="absolute -inset-8 rounded-3xl bg-primary/10 blur-3xl" aria-hidden />
               <img
-                src={heroImage}
+                src={heroImage.src}
                 alt="Purple blockchain symbol image"
                 width={1920}
                 height={1080}

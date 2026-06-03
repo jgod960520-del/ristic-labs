@@ -32,6 +32,9 @@
     "paths": {
       "@/*": [
         "./src/*"
+      ],
+      "@assets/*": [
+        "./src/assets/*"
       ]
     },
     "allowJs": true,

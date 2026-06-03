@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { SiteShell } from "@/components/SiteShell";
-const aboutImage = "https://plus.unsplash.com/premium_photo-1661872817492-fd0c30404d74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTI2fHxibG9ja2NoYWluJTIwZWNobyUyMHN5c3RlbXxlbnwwfHwwfHx8MA%3D%3D";
+
+import aboutImage from "@assets/about.jpg";
 
 export default function About() {
   return (
@@ -41,7 +42,7 @@ export default function About() {
           </div>
           <div className="relative">
             <div className="absolute -inset-6 rounded-3xl bg-primary/10 blur-3xl" aria-hidden />
-            <img src={aboutImage} alt="Blockchain lattice" loading="lazy" width={1280} height={1280} className="relative rounded-2xl border border-border" />
+            <img src={aboutImage.src} alt="Blockchain lattice" loading="lazy" width={1280} height={1280} className="relative rounded-2xl border border-border" />
           </div>
         </section>
 
