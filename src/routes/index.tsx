@@ -1,9 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
-import { ArrowRight, Boxes, Code2, Globe2, Layers, Shield, Zap } from "lucide-react";
+import { ArrowRight, BadgeDollarSign, Boxes, Code2, Coins, Globe2, Layers, Shield, Sparkles, Zap } from "lucide-react";
 import { SiteShell } from "@/components/SiteShell";
-
-import heroImage from "@assets/ai.jpg";
+import logo from "@/assets/ristic-labs-logo.png";
 
 export default function Home() {
   return (
@@ -61,13 +60,29 @@ export default function Home() {
             </div>
             <div className="relative">
               <div className="absolute -inset-8 rounded-3xl bg-primary/10 blur-3xl" aria-hidden />
-              <img
-                src={heroImage.src}
-                alt="Purple blockchain symbol image"
-                width={1920}
-                height={1080}
-                className="relative rounded-2xl border border-border/60 shadow-2xl"
-              />
+              <div className="galaxy-shell relative overflow-hidden rounded-3xl border border-border/60 shadow-2xl" aria-label="Animated galaxy with blockchain tokens orbiting the earth">
+                <div className="galaxy-stars" aria-hidden />
+                <div className="galaxy-orbit orbit-one" aria-hidden />
+                <div className="galaxy-orbit orbit-two" aria-hidden />
+                <div className="galaxy-orbit orbit-three" aria-hidden />
+                <div className="galaxy-token token-btc"><Coins size={12} />BTC</div>
+                <div className="galaxy-token token-eth"><Globe2 size={12} />ETH</div>
+                <div className="galaxy-token token-sol"><Sparkles size={12} />SOL</div>
+                <div className="galaxy-token token-dot"><Layers size={12} />DOT</div>
+                <div className="galaxy-token token-ada"><BadgeDollarSign size={12} />ADA</div>
+                <div className="galaxy-token token-avax"><Shield size={12} />AVAX</div>
+                <div className="galaxy-earth" aria-hidden>
+                  <span className="galaxy-earth-core">
+                    <img
+                      src={logo.src}
+                      alt="Ristic Labs logo"
+                      className="galaxy-earth-logo"
+                      width={72}
+                      height={72}
+                    />
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
