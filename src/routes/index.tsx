@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import { ArrowRight, BadgeDollarSign, Boxes, Code2, Coins, Cpu, Globe2, Layers, Shield, Sparkles, Star, Zap } from "lucide-react";
+import { ArrowRight, Boxes, Code2, Globe2, Layers, Shield, Zap } from "lucide-react";
 import { SiteShell } from "@/components/SiteShell";
 import logo from "@/assets/ristic-labs-logo.png";
 
@@ -65,16 +65,16 @@ export default function Home() {
                 <div className="galaxy-orbit orbit-one" aria-hidden />
                 <div className="galaxy-orbit orbit-two" aria-hidden />
                 <div className="galaxy-orbit orbit-three" aria-hidden />
-                <div className="galaxy-token token-btc"><Coins size={12} />BTC</div>
-                <div className="galaxy-token token-eth"><Globe2 size={12} />ETH</div>
-                <div className="galaxy-token token-sol"><Sparkles size={12} />SOL</div>
-                <div className="galaxy-token token-dot"><Layers size={12} />DOT</div>
-                <div className="galaxy-token token-ada"><BadgeDollarSign size={12} />ADA</div>
-                <div className="galaxy-token token-avax"><Shield size={12} />AVAX</div>
-                <div className="galaxy-token token-link"><Code2 size={12} />LINK</div>
-                <div className="galaxy-token token-matic"><Cpu size={12} />MATIC</div>
-                <div className="galaxy-token token-uni"><Zap size={12} />UNI</div>
-                <div className="galaxy-token token-bnb"><Star size={12} />BNB</div>
+                <div className="galaxy-token token-btc"><span className="galaxy-token-logo token-logo-btc">₿</span>BTC</div>
+                <div className="galaxy-token token-eth"><span className="galaxy-token-logo token-logo-eth">Ξ</span>ETH</div>
+                <div className="galaxy-token token-sol"><span className="galaxy-token-logo token-logo-sol">S</span>SOL</div>
+                <div className="galaxy-token token-dot"><span className="galaxy-token-logo token-logo-dot">D</span>DOT</div>
+                <div className="galaxy-token token-ada"><span className="galaxy-token-logo token-logo-ada">A</span>ADA</div>
+                <div className="galaxy-token token-avax"><span className="galaxy-token-logo token-logo-avax">AV</span>AVAX</div>
+                <div className="galaxy-token token-link"><span className="galaxy-token-logo token-logo-link">L</span>LINK</div>
+                <div className="galaxy-token token-matic"><span className="galaxy-token-logo token-logo-matic">M</span>MATIC</div>
+                <div className="galaxy-token token-uni"><span className="galaxy-token-logo token-logo-uni">U</span>UNI</div>
+                <div className="galaxy-token token-bnb"><span className="galaxy-token-logo token-logo-bnb">B</span>BNB</div>
                 <div className="galaxy-earth" aria-hidden>
                   <span className="galaxy-earth-core">
                     <img

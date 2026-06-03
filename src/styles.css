@@ -209,6 +209,31 @@
     will-change: transform;
   }
 
+  .galaxy-token-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 9999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.16);
+  }
+
+  .token-logo-btc { background: #f7931a; }
+  .token-logo-eth { background: #627eea; }
+  .token-logo-sol { background: #14f195; color: #080b10; }
+  .token-logo-dot { background: #e6007a; }
+  .token-logo-ada { background: #0033ad; }
+  .token-logo-avax { background: linear-gradient(135deg, #e84142, #6b5bff); }
+  .token-logo-link { background: #2a5ada; }
+  .token-logo-matic { background: #8247e5; }
+  .token-logo-uni { background: #314dff; }
+  .token-logo-bnb { background: #f3ba2f; color: #080b10; }
+
   .token-btc { animation: orbit-btc 18s linear infinite; }
   .token-eth { animation: orbit-eth 14s linear infinite; }
   .token-sol { animation: orbit-sol 20s linear infinite; }
