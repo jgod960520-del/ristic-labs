@@ -59,7 +59,6 @@ export default function Home() {
               </dl>
             </div>
             <div className="relative">
-              <div className="absolute -inset-8 rounded-3xl bg-primary/10 blur-3xl" aria-hidden />
               <div className="galaxy-shell relative overflow-hidden rounded-3xl border border-border/60 shadow-2xl" aria-label="Animated galaxy with blockchain tokens orbiting the earth">
                 <div className="galaxy-stars" aria-hidden />
                 <div className="galaxy-orbit orbit-one" aria-hidden />
