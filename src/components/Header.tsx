@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/ristic-labs-logo.png";
@@ -13,6 +14,10 @@ const links = [
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const { pathname } = useRouter();
+
+  const isActive = (to: string) => pathname === to;
+
   return (
     <header className="sticky top-0 z-50 border-b border-border/40 bg-background/70 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
@@ -20,9 +25,17 @@ export function Header() {
           <img src={logo.src} alt="Ristic Labs" width={36} height={36} className="h-9 w-9 object-contain" />
           <span>Ristic <span className="text-primary">Labs</span></span>
         </Link>
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-3 md:flex">
           {links.map((l) => (
-            <Link key={l.to} href={l.to} className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+            <Link
+              key={l.to}
+              href={l.to}
+              className={`rounded-md px-3 py-2 text-sm font-medium transition-all ${
+                isActive(l.to)
+                  ? "border border-primary/80 bg-primary/5 text-primary shadow-[0_0_18px_rgba(139,92,246,0.18)]"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
+            >
               {l.label}
             </Link>
           ))}
@@ -48,7 +61,11 @@ export function Header() {
               key={l.to}
               href={l.to}
               onClick={() => setOpen(false)}
-              className="rounded px-2 py-2 text-sm text-muted-foreground hover:bg-muted hover:text-foreground"
+              className={`rounded-md px-3 py-2 text-sm font-medium transition-all ${
+                isActive(l.to)
+                  ? "border border-primary/80 bg-primary/5 text-primary shadow-[0_0_18px_rgba(139,92,246,0.18)]"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
             >
               {l.label}
             </Link>
