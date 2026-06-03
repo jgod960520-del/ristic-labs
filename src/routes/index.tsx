@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import { ArrowRight, BadgeDollarSign, Boxes, Code2, Coins, Globe2, Layers, Shield, Sparkles, Zap } from "lucide-react";
+import { ArrowRight, BadgeDollarSign, Boxes, Code2, Coins, Cpu, Globe2, Layers, Shield, Sparkles, Star, Zap } from "lucide-react";
 import { SiteShell } from "@/components/SiteShell";
 import logo from "@/assets/ristic-labs-logo.png";
 
@@ -71,6 +71,10 @@ export default function Home() {
                 <div className="galaxy-token token-dot"><Layers size={12} />DOT</div>
                 <div className="galaxy-token token-ada"><BadgeDollarSign size={12} />ADA</div>
                 <div className="galaxy-token token-avax"><Shield size={12} />AVAX</div>
+                <div className="galaxy-token token-link"><Code2 size={12} />LINK</div>
+                <div className="galaxy-token token-matic"><Cpu size={12} />MATIC</div>
+                <div className="galaxy-token token-uni"><Zap size={12} />UNI</div>
+                <div className="galaxy-token token-bnb"><Star size={12} />BNB</div>
                 <div className="galaxy-earth" aria-hidden>
                   <span className="galaxy-earth-core">
                     <img

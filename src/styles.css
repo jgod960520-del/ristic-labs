@@ -129,15 +129,7 @@
   }
 
   .galaxy-stars {
-    position: absolute;
-    inset: 0;
-    background-image:
-      radial-gradient(circle at 22% 18%, oklch(0.95 0.02 290 / 0.95) 0 2px, transparent 3px),
-      radial-gradient(circle at 76% 24%, oklch(0.88 0.06 305 / 0.9) 0 1.5px, transparent 2.5px),
-      radial-gradient(circle at 64% 66%, oklch(0.82 0.05 290 / 0.9) 0 2.2px, transparent 3.2px),
-      radial-gradient(circle at 32% 70%, oklch(0.76 0.06 295 / 0.85) 0 1.8px, transparent 2.8px),
-      radial-gradient(circle at 82% 82%, oklch(0.92 0.03 290 / 0.95) 0 1.4px, transparent 2.4px);
-    opacity: 0.8;
+    display: none;
   }
 
   .galaxy-orbit {
@@ -223,6 +215,10 @@
   .token-dot { animation: orbit-dot 16s linear infinite; }
   .token-ada { animation: orbit-ada 22s linear infinite; }
   .token-avax { animation: orbit-avax 17s linear infinite; }
+  .token-link { animation: orbit-link 19s linear infinite; }
+  .token-matic { animation: orbit-matic 15s linear infinite; }
+  .token-uni { animation: orbit-uni 21s linear infinite; }
+  .token-bnb { animation: orbit-bnb 17.5s linear infinite; }
 
   @keyframes galaxy-spin {
     to { transform: rotate(360deg); }
@@ -256,6 +252,26 @@
   @keyframes orbit-avax {
     0% { transform: translate(-50%, -50%) rotate(145deg) translateX(152px) rotate(-145deg); }
     100% { transform: translate(-50%, -50%) rotate(505deg) translateX(152px) rotate(-505deg); }
+  }
+
+  @keyframes orbit-link {
+    0% { transform: translate(-50%, -50%) rotate(10deg) translateX(138px) rotate(-10deg); }
+    100% { transform: translate(-50%, -50%) rotate(370deg) translateX(138px) rotate(-370deg); }
+  }
+
+  @keyframes orbit-matic {
+    0% { transform: translate(-50%, -50%) rotate(95deg) translateX(124px) rotate(-95deg); }
+    100% { transform: translate(-50%, -50%) rotate(455deg) translateX(124px) rotate(-455deg); }
+  }
+
+  @keyframes orbit-uni {
+    0% { transform: translate(-50%, -50%) rotate(250deg) translateX(148px) rotate(-250deg); }
+    100% { transform: translate(-50%, -50%) rotate(610deg) translateX(148px) rotate(-610deg); }
+  }
+
+  @keyframes orbit-bnb {
+    0% { transform: translate(-50%, -50%) rotate(330deg) translateX(168px) rotate(-330deg); }
+    100% { transform: translate(-50%, -50%) rotate(690deg) translateX(168px) rotate(-690deg); }
   }
 
   @keyframes earth-rotate {
